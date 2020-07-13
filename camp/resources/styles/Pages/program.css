@@ -1,0 +1,277 @@
+.Main{
+  background-color: rgba(255, 249, 239, .7);
+}
+.HeadLine{
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 769px){
+  .HeadLine{
+    padding-bottom: 70px;
+  }
+}
+.HeadLine-Text{
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  color: #121212;
+}
+@media screen and (min-width: 769px){
+  .HeadLine-Text{
+    font-size: 28px;
+  }
+}
+.HeadLine-Text::after{
+  content: "";
+  position: absolute;
+  margin-top: 5px;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: orange;
+}
+@media screen and (min-width: 769px){
+  .HeadLine-Text::after{
+    margin-top: 10px;
+    height: 5px;
+  }
+}
+.Program{
+  margin-left: auto;
+  margin-right: auto;
+  width: 93%;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+@media screen and (min-width: 769px){
+  .Program{
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+.Program-ListItem{
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.Program-ListItem:not(:last-child){
+  margin-bottom: 10px;
+}
+.Program-ListItem__Bottom{
+  width: 100%;
+}
+.Program-ListItem-Text{
+  font-size: 18px;
+  font-weight: bold;
+  color: orange
+}
+.Program-ListItem-Arrow{
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Program-ListItem-Arrow::before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 11px;
+  display: block;
+  width: 7px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  transition: .3s;
+}
+.Program-ListItem-Arrow::after{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 7px;
+  display: block;
+  width: 7px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  transition: .3s;
+}
+.Program-ListItem-Arrow.isClicked::before{
+  transform: rotate(-45deg);
+}
+.Program-ListItem-Arrow.isClicked::after{
+  transform: rotate(45deg);
+}
+.Program-ListItem-Table{
+  color: #2E2E2E;
+}
+.Program-ListItem > :last-child > :first-child{
+  margin-bottom: 80px;
+}
+.Program-ListItem-Table-Target{
+  margin-bottom: 30px;
+  display: block;
+  border: 1px solid #b3b3b3;
+  height: auto;
+  background-color: #fff;
+  font-size: 12px;
+}
+@media screen and (min-width: 769px){
+  .Program-ListItem-Table-Target{
+    margin-bottom: 30px;
+  }
+}
+.Program-ListItem-Table-Target-Title{
+  border-bottom: dotted 1px #b3b3b3;
+  width: 100%;
+  padding-top: .7em;
+  padding-bottom: .7em;
+  display: flex;
+  justify-content: center;
+  line-height: 1.8;
+  font-size: 13px;
+}
+.Program-ListItem-Table-Target-Title-Text{
+  font-weight: bold;
+  color: orange;
+}
+@media screen and (min-width: 769px){
+  .Program-ListItem-Table-Target-Title-Text{
+    font-size: 22px;
+  }
+}
+.Program-ListItem-Table-Target-Explan{
+  width: 100%;
+  padding: 1em 15px;
+  line-height: 1.8;
+  text-align: center;
+}
+@media screen and (min-width: 769px){
+  .Program-ListItem-Table-Target-Explan-Text{
+    font-size: 16px;
+  }
+}
+.Program-ListItem-Timeschedule{
+  font-size: 12px;
+}
+.Program-ListItem-Timeschedule-HeadLine{
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.Program-ListItem-Timeschedule-HeadLine-Text{
+  font-size: 16px;
+  font-weight: bold;
+  color: orange;
+}
+.Program-ListItem-Timeschedule-CardGroup{
+  background-color: #fff;
+  color: #2E2E2E;
+}
+.Program-ListItem-Timeschedule-CardGroup-CardItem{
+  border: 1px solid #b3b3b3;
+  display: flex;
+  justify-content: center;
+}
+.Program-ListItem-Timeschedule-CardGroup-CardItem:not(:last-child){
+  border-bottom: 0;
+}
+.Program-ListItem-Timeschedule-CardGroup-CardItem-Time{
+  border-right: 1px solid #b3b3b3;
+  width: 100%;
+  background-color: #F4F4F4;
+  max-width: 65px;
+}
+@media screen and (min-width: 769px){
+  .Program-ListItem-Timeschedule-CardGroup-CardItem-Time{
+    max-width: 250px;
+  }
+}
+.Program-ListItem-Timeschedule-CardGroup-CardItem-Time-Text{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2E2E2E;
+  font-weight: bold;
+}
+@media screen and (min-width: 769px){
+  .Program-ListItem-Timeschedule-CardGroup-CardItem-Time-Text{
+    font-size: 16px;
+  }
+}
+.Program-ListItem-Timeschedule-CardGroup-CardItem-TitleText{
+  padding: calc(1em + 2px);
+  color: orange;
+  font-weight: bold;
+  line-height: 1.8;
+  font-size: 13px;
+}
+@media screen and (min-width: 769px){
+  .Program-ListItem-Timeschedule-CardGroup-CardItem-TitleText{
+    font-size: 22px;
+  }
+}
+.Program-ListItem-Timeschedule-CardGroup-CardItem-Explan{
+  width: 100%;
+}
+.Program-ListItem-Timeschedule-CardGroup-CardItem-Explan-TextGroup{
+  padding: calc(1em + 2px);
+}
+.Program-ListItem-Timeschedule-CardGroup-CardItem-Explan-TextGroup-TitleText{
+  color: orange;
+  font-weight: bold;
+  line-height: 1.8;
+  font-size: 13px;
+}
+@media screen and (min-width: 769px){
+  .Program-ListItem-Timeschedule-CardGroup-CardItem-Explan-TextGroup-TitleText{
+    font-size: 16px;
+  }
+}
+.Program-ListItem-Timeschedule-CardGroup-CardItem-Explan-TextGroup-Text{
+  line-height: 1.8;
+}
+@media screen and (min-width: 769px){
+  .Program-ListItem-Timeschedule-CardGroup-CardItem-Explan-TextGroup-Text{
+    font-size: 16px;
+  }
+}
+.Program-ListItem-Timeschedule-CardGroup-CardItem-Explan-TextGroup-Img{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.BackTop{
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: orange;
+}
+@media screen and (min-width: 769px){
+  .BackTop{
+    bottom: 25px;
+    right: 40px;
+    width: 100px;
+    height: 100px;
+  }
+}
+.BackTop-Text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}

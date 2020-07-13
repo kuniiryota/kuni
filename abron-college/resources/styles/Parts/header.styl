@@ -1,0 +1,208 @@
+.HeaderLayer{
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+  transition: .5s;
+}
+.HeaderLayer.isScrolled{
+  background-color: #fff;
+  transition: .5s;
+}
+.HeaderLayer-Header{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px){
+  .HeaderLayer-Header{
+    display: none;
+  }
+}
+.HeaderLayer-Header > :first-child{
+  margin-left: 50px;
+}
+.HeaderLayer-Header-LinkImg{
+  display: block;
+  width: 120px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+.HeaderLayer-Header-LinkImg.isScrolled{
+  height: 90px;
+  transition: .5s;
+}
+.HeaderLayer-Header-Img{
+  width: 100%;
+  height: auto;
+}
+.HeaderLayer-Header-NavGroup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HeaderLayer-Header-NavGroup-NavItem{
+  width: 100%;
+  height: auto;
+}
+.HeaderLayer-Header-NavGroup > :last-child{
+  background-color: MAIN-COLOR;
+}
+.HeaderLayer-Header-NavGroup-NavItem-LinkText{
+  display: block;
+  width: 100%;
+  max-width: 160px;
+  height: 160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  transition: .5s;
+}
+@media screen and (max-width: 960px){
+  .HeaderLayer-Header-NavGroup-NavItem-LinkText{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+}
+.HeaderLayer-Header-NavGroup-NavItem-LinkText.isScrolled{
+  height: 90px;
+  transition: .5s;
+  color: #000;
+}
+.HeaderLayer-Header-NavGroup > :last-child > *{
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #fff;
+}
+@media screen and (max-width: 960px){
+  .HeaderLayer-Header-NavGroup > :last-child > *{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* SPcss */
+.HeaderLayer-HeaderSp{
+  position: relative;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px){
+  .HeaderLayer-HeaderSp{
+    display: flex;
+  }
+}
+.HeaderLayer-HeaderSp > :first-child{
+  margin-left: 17px;
+}
+.HeaderLayer-HeaderSp__Left{
+  position: relative;
+  z-index: 1000;
+}
+.HeaderLayer-HeaderSp-LinkImg{
+  display: block;
+  width: 70px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+.HeaderLayer-HeaderSp-Img{
+  width: 100%;
+  height: auto;
+}
+.HeaderLayer-HeaderSp__Center{
+  position: relative;
+  z-index: 1000;
+}
+.HeaderLayer-HeaderSp-MenuIcon{
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.HeaderLayer-HeaderSp-MenuIcon-Item{
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+}
+.HeaderLayer-HeaderSp-MenuIcon-Item:first-child{
+  position: relative;
+  top: -7px;
+  transition: .5s;
+}
+.HeaderLayer-HeaderSp-MenuIcon-Item.isClicked:first-child{
+  top: 3px;
+  transform: rotate(-315deg);
+  transition: .5s;
+}
+.HeaderLayer-HeaderSp-MenuIcon-Item:nth-child(2){
+  transition: .5s;
+}
+.HeaderLayer-HeaderSp-MenuIcon-Item.isClicked:nth-child(2){
+  opacity: 0;
+  transition: .5s;
+}
+.HeaderLayer-HeaderSp-MenuIcon-Item:last-child{
+  position: relative;
+  top: 7px;
+  transition: .5s;
+}
+.HeaderLayer-HeaderSp-MenuIcon-Item.isClicked:last-child{
+  top: -1px;
+  transform: rotate(315deg);
+  transition: .5s;
+}
+.HeaderLayer-HeaderSp__Right{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  transform: translateX(100vw);
+}
+.HeaderLayer-HeaderSp__Right.isClicked{
+  transform: translateX(0);
+}
+.HeaderLayer-HeaderSp-NavGroup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.HeaderLayer-HeaderSp-NavGroup-NavItem{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: Verdana, sans-selif;
+}
+.HeaderLayer-HeaderSp-NavGroup-NavItem-LinkText{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.HeaderLayer-HeaderSp-NavGroup-NavItem:not(:last-child) > *{
+  padding-bottom: 36px;
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="95" viewBox="0 0 1440 95">
+  <defs>
+    <clipPath id="clip-aa">
+      <rect width="1440" height="95"/>
+    </clipPath>
+  </defs>
+  <g id="aa" clip-path="url(#clip-aa)">
+    <rect width="1440" height="95" fill="rgba(255,255,255,0)"/>
+    <path id="パス_20" data-name="パス 20" d="M720,0c397.645,0,720,40.294,720,90,0,10.687,32.438-10.355,5-.814-26.236,9.124,1.367,63.907-50.62,74.613C1249.219,193.693,950.055,180,720,180c-227.929,0-523.085,13.57-668.631-16.2-53.2-10.883-29-65.579-55.9-74.8C-32.591,79.39,0,100.836,0,90,0,40.294,322.355,0,720,0Z" transform="translate(0 -90)" fill="#fff"/>
+  </g>
+</svg>

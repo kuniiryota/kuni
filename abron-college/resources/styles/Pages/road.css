@@ -1,0 +1,209 @@
+.RoadDisplay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.RoadDisplay.isRoaded {
+  display: none;
+}
+.RoadDisplay__Top {
+  height: 50vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  animation-name: LoadTop;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+.RoadDisplay__Middle {
+  position: relative;
+  height: 2px;
+  background-color: #ffba20;
+  animation: LoadLine 2s ease forwards 0s, LoadFill .1s ease forwards 2.2s;
+}
+.RoadDisplay__Bottom {
+  height: 50vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation-name: LoadBottom;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+.RoadDisplay-MainText {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: center;
+  font-size: 35px;
+}
+@media screen and (max-width: 768px) {
+  .RoadDisplay-MainText {
+    font-size: 20px;
+  }
+}
+.RoadDisplay__Top > * {
+  padding-bottom: 20px;
+}
+.RoadDisplay__Bottom > * {
+  padding-top: 20px;
+}
+.RoadDisplay-MainText.isRoaded {
+  opacity: 0;
+  transition: 0.4s;
+}
+@-moz-keyframes Arrowmove {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 8px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes Arrowmove {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 8px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes Arrowmove {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 8px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes Arrowmove {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 8px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes LoadTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes LoadTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@-o-keyframes LoadTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes LoadTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes LoadLine {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes LoadFill {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@-moz-keyframes LoadBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@-webkit-keyframes LoadBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@-o-keyframes LoadBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes LoadBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+.RoadDisplay-MainText-Br{
+  display: none;
+}
+.Service-SP-Br{
+  display: none;
+}
+@media screen and (max-width: 768px){
+  .RoadDisplay-MainText-Br{
+    display: block;
+  }
+  .Service-SP-Br{
+    display: block;
+  }
+}

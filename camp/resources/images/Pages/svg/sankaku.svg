@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="400" viewBox="0 0 150 400">
+  <defs>
+    <clipPath id="clip-アートボード_1">
+      <rect width="150" height="400"/>
+    </clipPath>
+  </defs>
+  <g id="アートボード_1" data-name="アートボード – 1" clip-path="url(#clip-アートボード_1)">
+    <rect width="150" height="400" fill="rgba(255,255,255,0)"/>
+    <path id="多角形_1" data-name="多角形 1" d="M149.5,0,299,400H0Z" fill="#fff"/>
+  </g>
+</svg>
